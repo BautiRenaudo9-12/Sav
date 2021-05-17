@@ -201,6 +201,7 @@
         width: 1090px;
         height: 100%;
         transform: translateX(-40%);
+        object-fit: cover;
 }
 
 /*LOGO*/
