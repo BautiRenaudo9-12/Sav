@@ -44,7 +44,7 @@ function main(){
     
     //redireccionar a redes sociales
     iconMail.onclick = function(){
-        window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZcRqTCQxZnzFPMlpnDtVkVDHbkKZFCQnFzfVrfGRFHjSwlkfkqPHCbGCSGCFKvzJfdJQq");
+        window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRtswFhsHXwqGgWCtqbvxfHQjSBlPdjqqtkTJktxBTbqKBCgLKRNSwWKpLXrqGFLqzTHZBb");
     }
     iconInstagram.onclick=function(){ 
         window.open("https://www.instagram.com/savretratos/");
