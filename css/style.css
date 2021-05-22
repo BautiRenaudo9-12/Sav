@@ -126,7 +126,7 @@
  #puntos{
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 250px;
     bottom: 0;
@@ -138,7 +138,7 @@
 #puntos span{
     
     display: block;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     border-radius: 50%;
     color: rgba(0, 0, 0, 0.849);
