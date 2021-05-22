@@ -66,6 +66,7 @@
 /*IMAGEN DE FONDO*/
 #fondo{
   position: relative;
+
 }
 
 #pintando{
@@ -119,6 +120,62 @@
     color: white;
     font-family:'Open Sans Condensed', sans-serif;
     font-weight: lighter;
+}
+
+ /*MENU DE REDES*/
+ #puntos{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+#puntos span{
+    
+    display: block;
+    position: fixed;
+    bottom: 0;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 45px;
+    cursor: pointer;
+    
+}
+#puntos #icon-mail{
+    background-color: white;
+    padding: 5px;
+    transition: all .3s;
+}
+#puntos #icon-mail:hover{
+   box-shadow: 10px 10px 20px black;
+    transform: scale(1.5);
+   transition: .2s;
+}
+
+#puntos #icon-instagram-circle{
+    background-color: white;
+    padding: 5px;
+    transition: all .5s;
+}
+#puntos #icon-instagram-circle:hover{
+    box-shadow: 10px 10px 20px black;
+    transform: scale(1.5);
+    transition: .2s;
+}
+
+#puntos #icon-three{
+    background-color: white;
+    font-size: 55px;
+    box-shadow: 5px 5px 10px black;
+}
+#puntos #icon-three:active{
+    box-shadow: 0px 0px 0px black;
+    font-size: 53px;
 }
 
 
