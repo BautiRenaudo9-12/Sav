@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body::-webkit-scrollbar{
+    background-color: black;
+    width: 5px;
+    box-shadow: 0px 0px 20px 20px black ;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+}
+
+/*HEADER 1*/
+#header1{
+    display: block;
+    padding-top: 40px;
+    text-align: center; 
+}
+#header1 nav{
+   
+}
+#header1 nav ul{
+    
+}
+
+#header1 nav ul li{
+    display:inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#header1 nav ul #oleo a{
+    color: rgb(48, 181, 190);
+}
+
+
+#header1 nav ul .separar{
+    transform: translateY(30px);
+    background-color: rgb(146, 146, 146);
+    width: .5px;
+    height: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#header1 nav ul li a{
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#header1 nav ul li a:hover{
+    color: rgb(48, 181, 190);
+    font-size: 16px;
+} 
+  
+
+/*HEADER 2*/
+#header2{
+     display: none;    
+}
+
+/*LINEA SEPARADORA*/
+#linea{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+/*DIV CUADROS*/
+#cuadros{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*ARTISTA*/
+#cuadros div{
+    display: block;
+    margin-bottom: 90px;
+}
+
+#cuadros img{
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    width: 530px;
+    padding: 2px;
+    margin-right: 25px;
+
+}
+
+/*TEXTO*/
+#cuadros div .texto{
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    transform: translateY(-15px);
+}
+#cuadros div .texto h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: black;
+}
+#cuadros div .texto h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: grey;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+#cuadros div .texto h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: grey;
+}
+
+
+/*MENU DE REDES*/
+
+#puntos{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 50px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+#puntos span{
+    
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: 45px;
+    cursor: pointer;
+    
+}
+#puntos #icon-mail{
+    background-color: white;
+    padding: 5px;
+    transition: all .3s;
+}
+#puntos #icon-mail:hover{
+   box-shadow: 10px 10px 20px black;
+    transform: scale(1.5);
+   transition: .2s;
+}
+
+#puntos #icon-instagram{
+    background-color: white;
+    padding: 5px;
+    transition: all .5s;
+}
+#puntos #icon-instagram:hover{
+    box-shadow: 10px 10px 20px black;
+    transform: scale(1.5);
+    transition: .2s;
+}
+
+#puntos #icon-three{
+    background-color: white;
+    font-size: 55px;
+    box-shadow: 5px 5px 10px black;
+}
+#puntos #icon-three:active{
+    box-shadow: 0px 0px 0px black;
+    font-size: 53px;
+}
+
+
+@media screen and (max-width:900px){
+    /*ARTISTA*/
+    #cuadros div{
+        display: block;
+        margin-bottom: 25px;
+    }
+    #cuadros div img{
+        margin: 0 auto;
+    }
+    
+    /*TEXTO*/
+    #cuadros div .texto{
+        display: inline-block;
+        text-align: center;
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (max-width:600px){
+    #cuadros{
+        position: absolute;
+    }
+    /*HEADER 1*/
+    #header1{
+        display: none;
+        text-align: center;
+        padding-top: 0px;
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+    /*HEADER 2*/
+    #header2{
+        display: block;
+        text-align: center;
+        padding-top: 0px;
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.582);
+        position: fixed;
+    }
+    #header2 nav{
+       
+    }
+    #header2 nav ul{
+        
+    }
+
+    #header2 nav ul li{
+        display:inline-block;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    #header2 nav ul .separar{
+        transform: translateY(30px);
+        background-color: rgb(146, 146, 146);
+        width: .5px;
+        height: 40px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #header2 nav ul #oleo2 a{
+        color: rgb(48, 181, 190);
+    }
+    #header2 nav ul li a{
+        display: block;
+        padding: 1px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #header2 nav ul li a:hover{
+        color: rgb(48, 181, 190);
+        font-size: 16px;
+    } 
+
+    /*LINEA SEPARADORA*/
+    #linea{
+        background-color: rgb(0, 0, 0);
+        display: none;
+        width: 100%;
+        height: 4px;  
+        
+    }
+    #linea2{
+        background-color: rgb(0, 0, 0);
+        display:block;
+        width: 100%;
+        height: 4px;
+        position: fixed;  
+    }
+
+    /*DIV CUADROS*/
+    /*ARTISTA*/
+    #cuadros div img{
+        border: 1px solid black;
+        box-shadow: 0px 0px 5px black;
+        width: 98%;
+        padding: 1px;
+        margin: 0 auto;
+        margin-right: 0px;  
+    }
+}
