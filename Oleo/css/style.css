@@ -12,6 +12,24 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: rgb(255, 255, 255);
 }
+.capa{
+    display: grid;
+    place-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 48, 46);
+    transition: all 1s;
+    opacity: 1;
+    z-index: 1000;
+    pointer-events: none;
+}
+.capa h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 45px;
+}
 
 /*HEADER 1*/
 #header1{
