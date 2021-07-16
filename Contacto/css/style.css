@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /*HEADER 1*/
@@ -69,42 +70,22 @@
 .redes {
     display: block;
     width: 100%;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
-.envase {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 85%;
-    max-width: 800px;
-    height: 60px;
-    border: 5px solid rgb(66, 66, 66);
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-bottom: 70px;
-    text-align: left;
-    text-decoration: none;
-    transition: background .3s;
-}
-
-.envase:active {
-    box-shadow: 0 0 5px 5px black;
-}
-.envase:hover{
-    background: rgb(0, 0, 0);
-}
-
-.envase span {
+.redes a {
     display: grid;
     place-content: center;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-bottom: 100px;
     z-index: 100;
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    margin-left: 0px;
+    font-size: 40px;
+    text-decoration: none;
     background: rgb(0, 0, 0);
+    box-shadow: 0 0 0 2px rgb(0, 167, 179);
     border-radius: 50%;
 }
 
@@ -119,18 +100,19 @@
         text-align: center;
         padding-top: 0px;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.582);
+        background-color: rgba(255, 255, 255, 0.623);
         position: fixed;
     }
     #header2 nav {}
     #header2 nav ul {}
     #header2 nav ul li {
         display: inline-block;
-        margin-bottom: 15px;
+        margin-bottom: -5px;
         margin-top: 0px;
+        padding-bottom: 20px;
     }
     #header2 nav ul .separar {
-        transform: translateY(30px);
+        transform: translateY(10px);
         background-color: rgb(146, 146, 146);
         width: .5px;
         height: 40px;
@@ -138,14 +120,14 @@
         margin-right: 2%;
     }
     #header2 nav ul #sobreMi2 a {
-        color: rgb(48, 181, 190);
+        font-weight: bold;
     }
     #header2 nav ul li a {
         display: block;
         padding: 1px;
         text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 13px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
         font-weight: 500;
     }
     #header2 nav ul li a:hover {
