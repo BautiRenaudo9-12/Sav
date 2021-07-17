@@ -24,11 +24,30 @@ body::-webkit-scrollbar-thumb{
     z-index: 1000;
     pointer-events: none;
 }
+.capa .circle{
+    display: block;
+    margin: 50px auto;
+    width: 70px;
+    height: 70px;
+    background-color: none;
+    border-radius: 50%;
+    border: 7px solid rgb(255, 255, 255);
+    border-top: 7px groove grey;
+    animation: loading 1.3s ease-in-out infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
 .capa h1{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 45px;
+    font-size: 20px;
 }
 
 /*HEADER 1*/
