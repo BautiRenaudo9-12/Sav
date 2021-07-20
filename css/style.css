@@ -9,7 +9,7 @@
 #header1{
     display: block;
     padding-top: 40px;
-    text-align: center; 
+    text-align: center;
 }
 #header1 nav{
 }
@@ -63,7 +63,7 @@
 
 /*IMAGEN DE FONDO*/
 #fondo{
-  position: relative;
+  position: fixed;
 }
 #pintando{
     display: block;
@@ -74,7 +74,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0.527);
     animation: fondoBefore 4s linear;
 }
 @keyframes fondoBefore {
@@ -88,8 +88,10 @@
 #pintando img{
     display: block;
     width: 100%;
+    height: 100%;
     position: fixed;
     z-index: -1;
+    object-fit: cover;
 }
 
 /*LOGO*/
@@ -109,6 +111,16 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 300;
+}
+#logo::before{
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
 }
 
 
